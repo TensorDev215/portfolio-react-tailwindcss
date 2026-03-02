@@ -1,8 +1,8 @@
-import { FC } from 'react'
-import Header from './layout/header'
+export default function App() {
 
-const App: FC = () => {
-  return <Header />
+  return (
+    <div className='bg-red-500'>
+      Hello
+    </div>
+  )
 }
-
-export default App

@@ -1,12 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.scss'
+import * as React from 'react'
+import * as ReactDOM from 'react-dom/client'
+import { StyledEngineProvider } from '@mui/material'
 import App from './App'
+import reportWebVitals from './reportWebVitals'
+import './index.css'
 
-const root = createRoot(document.getElementById('root') as HTMLElement)
+export const rootElement = document.getElementById('root')
+const root = ReactDOM.createRoot(rootElement!)
 
 root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+  <React.StrictMode>
+    <StyledEngineProvider injectFirst>
+      <App />
+    </StyledEngineProvider>
+  </React.StrictMode>
 )
+
+reportWebVitals()

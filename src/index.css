@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
+html {
+  font-size: 16px;
+}
 
 * {
   box-sizing: border-box;
@@ -21,4 +27,27 @@
 *::-webkit-scrollbar-thumb {
   background-color: #525252;
   outline: 1px solid rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: "Kapakana";
+  src: url("./assets/fonts/Kapakana[wght].ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo-font {
+  font-family: "Kapakana", cursive;
+  fill: "#0C3197";
+  stroke: "#1E141B";
+  stroke-width: "2";
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    to bottom left,
+    #072D62 30%,
+    #0F5CC8 79%,
+    #0F5CC8 100%
+  );
 }

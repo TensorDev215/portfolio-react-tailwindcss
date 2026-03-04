@@ -1,8 +1,11 @@
-export default function App() {
+import { ThemeProvider } from './context/ThemeProvider'
+import routes from './routes'
+import { RouterProvider } from 'react-router-dom'
 
-  return (
-    <div className='bg-red-500'>
-      Hello
-    </div>
-  )
+export default function App() {
+    return (
+        <ThemeProvider>
+            <RouterProvider router={routes} />
+        </ThemeProvider>
+    )
 }

@@ -9,11 +9,11 @@ export const rootElement = document.getElementById('root')
 const root = ReactDOM.createRoot(rootElement!)
 
 root.render(
-  <React.StrictMode>
-    <StyledEngineProvider injectFirst>
-      <App />
-    </StyledEngineProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <StyledEngineProvider injectFirst>
+            <App />
+        </StyledEngineProvider>
+    </React.StrictMode>
 )
 
 reportWebVitals()

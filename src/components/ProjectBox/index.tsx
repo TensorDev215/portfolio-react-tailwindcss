@@ -6,7 +6,7 @@ const ProjectBox = ({ project }: { project: ProjectBoxType }) => {
     const IconComponent = Icons[project.icon] as ComponentType<{ className?: string }>
 
     return (
-        <div className='p-6 bg-white shadow-md rounded-lg flex items-center space-x-4'>
+        <div className='p-6 bg-white shadow-md hover:shadow-xl hover:cursor-pointer rounded-lg flex items-center space-x-4'>
             <div className={`${project.color} rounded-full flex items-center justify-center text-2xl p-4 text-white`}>
                 <IconComponent className='w-5 h-5' />
             </div>

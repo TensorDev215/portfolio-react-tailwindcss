@@ -2,9 +2,9 @@ import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react'
 
 const Footer = () => {
     return (
-        <footer className='p-5 lg:px-96 lg:py-20 bg-[#F8F7F1] flex flex-col gap-8'>
-            <h2 className='font-inter font-bold text-2xl'>
-                Let's get Work <span className='text-red-500'>together.</span>
+        <footer className='p-5 lg:px-96 lg:py-20 flex flex-col gap-8'>
+            <h2 className='font-inter font-bold text-3xl'>
+                Let's get Work <span className='text-red-500'>Together.</span>
             </h2>
             <p className=' font-inter text-base font-normal text-gray-500'>
                 Feel free to reach out ot discuss your ideas or projects, of if you have any inquiries. I'm here to help
